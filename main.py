@@ -6,8 +6,10 @@ form = """<!DOCTYPE html>
 <html>
     <head>
         <style>
+            html {{
+                background-color:Black;
+            }}
             form {{
-
                 background-color: #eee;
 
                 padding: 20px;
@@ -20,35 +22,65 @@ form = """<!DOCTYPE html>
 
                 border-radius: 10px;
 
-            }}
-
+                border-color:Frost-white;
+        
+                border-radius: 10px;
+        
+                box-shadow:0 0 10px 5px White;
+                }}
             textarea {{
+                display:block;
+                
+                margin-bottom:15px;
+
+                border:2px solid #aaa;
+
+                border-radius:4px;
+
+                margin:10px 0;
+
+                outline:none;
+
+                padding:10px;
+
+                box-sizing:border-box;
+
+                transition:.5s;
 
                 margin: 10px 0;
 
                 width: 540px;
 
                 height: 120px;
+                }}
+            input[type="text"]{{
+                border:2px solid #aaa;
 
+                border-radius:4px;
+            }}
+            input[type="text"]:focus,
+            textarea:focus {{
+                border-color:Black;
+                
+                box-shadow:0 0 10px 4px Black;
             }}
         </style>
 
     </head>
-
     <body>
 
       <!-- create your form here -->
-    <form action="/" method="post">
+      <form action="/" method="post">
 
-    <label>
-    Rotate by:
-    <input type="text" name= "rot" placeholder="0"/>
-    </label>
+            <label>
+            Rotate by:
+            <input type="text" name= "rot" placeholder="0"/>
+            </label>
 
-    <textarea name="text">{0}</textarea>
+         <textarea name="text">{0}</textarea>
 
-    <input type="submit" value="Submit Query"/>
-    </form>
+        <input type="submit" value="Submit Query"/>
+        </form>
 
     </body>
 
