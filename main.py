@@ -74,7 +74,7 @@ form = """<!DOCTYPE html>
 
             <label>
             Rotate by:
-            <input type="text" name= "rot" placeholder="0"/>
+            <input type="text" name= "rot" value="0"/>
             </label>
 
          <textarea name="text">{0}</textarea>
